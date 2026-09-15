@@ -188,7 +188,7 @@ export const initialPortfolioData: PortfolioContent = {
         "Documented and tested REST APIs using Swagger UI and Postman."
       ],
       technologies: ["Java", "JavaScript", "Node.js", "SQL", "Spring Boot", "Apache Kafka", "Postman", "Swagger UI", "Camunda", "TOSCA", "C++"],
-      current: true
+      current: false
     },
     {
       id: "exp-cisco-forum",

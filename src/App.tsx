@@ -27,7 +27,7 @@ import { autoSyncEngine } from './services/autoSyncEngine';
 import { GitHubLiveData } from './services/githubService';
 import { Terminal, Radio } from 'lucide-react';
 
-const STORAGE_KEY = 'etworkapp_portfolio_data_v14';
+const STORAGE_KEY = 'etworkapp_portfolio_data_v15';
 
 export default function App() {
   const [data, setData] = useState<PortfolioContent>(() => {
@@ -46,7 +46,8 @@ export default function App() {
         'etworkapp_portfolio_data_v10',
         'etworkapp_portfolio_data_v11',
         'etworkapp_portfolio_data_v12',
-        'etworkapp_portfolio_data_v13'
+        'etworkapp_portfolio_data_v13',
+        'etworkapp_portfolio_data_v14'
       ].forEach(k => {
         try { localStorage.removeItem(k); } catch (_) {}
       });
