@@ -92,8 +92,8 @@ export const About: React.FC<AboutProps> = ({ profile }) => {
                   <span className="text-emerald-400 font-mono font-bold">8.48 CGPA (Distinction)</span>
                 </div>
                 <div className="flex items-center justify-between p-2.5 rounded-xl bg-zinc-900/60 border border-zinc-800/80">
-                  <span className="text-zinc-300 font-medium">Cognizant GenC Elevate</span>
-                  <span className="text-zinc-400 font-mono">Full Stack Java Training</span>
+                  <span className="text-zinc-300 font-medium">Tech Mahindra</span>
+                  <span className="text-zinc-400 font-mono">Software Developer</span>
                 </div>
                 <div className="flex items-center justify-between p-2.5 rounded-xl bg-zinc-900/60 border border-zinc-800/80">
                   <span className="text-zinc-300 font-medium">SPPU French Diploma</span>

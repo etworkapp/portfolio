@@ -275,7 +275,7 @@ export const Hero: React.FC<HeroProps> = ({
                     <span className="text-emerald-300">"React"</span>];
                   </div>
                   <div className="pl-4 text-zinc-400">
-                    experience: <span className="text-emerald-300">"Cognizant GenC Elevate"</span>;
+                    experience: <span className="text-emerald-300">"Tech Mahindra"</span>;
                   </div>
                   <div className="pl-4 text-zinc-400">
                     status: <span className="text-purple-400">ReadyForDeploy</span>;
@@ -314,8 +314,8 @@ export const Hero: React.FC<HeroProps> = ({
                     <span className="text-emerald-400 font-bold">8.48 CGPA (Distinction)</span>
                   </div>
                   <div className="flex justify-between text-zinc-300 text-xs py-0.5 border-b border-zinc-900">
-                    <span className="text-zinc-500">Industry Training:</span>
-                    <span className="text-zinc-200">Cognizant GenC Elevate</span>
+                    <span className="text-zinc-500">Industry Experience:</span>
+                    <span className="text-zinc-200">Tech Mahindra</span>
                   </div>
                   <div className="flex justify-between text-zinc-300 text-xs py-0.5 border-b border-zinc-900">
                     <span className="text-zinc-500">Languages:</span>
