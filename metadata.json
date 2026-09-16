@@ -2,5 +2,7 @@
   "name": "Shubham - Portfolio",
   "description": "Modern React developer portfolio showcasing projects, technical skills, experience, and GitHub Pages deployment configuration.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

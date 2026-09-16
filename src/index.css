@@ -3,41 +3,45 @@
 @layer base {
   body {
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background-color: #050608;
+    background-color: #030407;
     color: #f4f4f5;
+    overflow-x: hidden;
   }
   
   h1, h2, h3, .font-heading {
     font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.02em;
   }
 }
 
 /* Modern ambient grid & dot background */
 .bg-grid-pattern {
-  background-size: 32px 32px;
+  background-size: 40px 40px;
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
 }
 
 .bg-dots-pattern {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
-  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
 }
 
-/* Glassmorphism card surface with crisp border */
+/* Glassmorphism card surface with crisp border & subtle inner shadow */
 .glass-panel {
-  background: rgba(10, 11, 15, 0.75);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(13, 14, 20, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
 }
 
 .glass-panel:hover {
-  border-color: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(18, 20, 28, 0.82);
 }
 
-/* Subtle top glow line on cards */
+/* Subtle top glow line on modern cards */
 .top-glow-border {
   position: relative;
 }
@@ -45,11 +49,21 @@
   content: '';
   position: absolute;
   top: 0;
-  left: 10%;
-  right: 10%;
+  left: 8%;
+  right: 8%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
   pointer-events: none;
+}
+
+/* Shimmer animation for live indicators */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2.5s infinite;
 }
 
 /* Custom subtle scrollbar */
@@ -57,7 +71,7 @@
   width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #050608;
+  background: #030407;
 }
 ::-webkit-scrollbar-thumb {
   background: #27272a;

@@ -123,27 +123,36 @@ export const Hero: React.FC<HeroProps> = ({
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white hover:bg-zinc-200 text-black font-semibold text-sm transition-all shadow-lg hover:shadow-zinc-700/20 cursor-pointer hover:-translate-y-0.5 active:translate-y-0"
                 id="hero-btn-projects"
               >
-                <span>View Projects</span>
+                <span>Explore Projects</span>
                 <ArrowRight className="w-4 h-4" />
+              </a>
+
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-white border border-zinc-700 font-semibold text-sm transition-all hover:border-zinc-500 cursor-pointer shadow-md hover:-translate-y-0.5 active:translate-y-0"
+                id="hero-btn-contact"
+              >
+                <Mail className="w-4 h-4 text-emerald-400" />
+                <span>Contact Me</span>
               </a>
 
               <button
                 onClick={onOpenResume}
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-white border border-zinc-700 font-semibold text-sm transition-all hover:border-zinc-500 cursor-pointer shadow-md hover:-translate-y-0.5 active:translate-y-0"
+                className="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-zinc-900/80 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-800 font-medium text-sm transition-all hover:border-zinc-600 cursor-pointer hover:-translate-y-0.5 active:translate-y-0"
                 id="hero-btn-resume"
               >
-                <FileText className="w-4 h-4 text-zinc-300" />
+                <FileText className="w-4 h-4 text-zinc-400" />
                 <span>Resume / CV</span>
               </button>
 
               <button
                 onClick={onOpenDeployGuide}
-                className="inline-flex items-center gap-2 px-4 py-3 rounded-xl bg-zinc-950 hover:bg-zinc-900 text-zinc-300 border border-zinc-800 hover:border-zinc-700 font-medium text-xs transition-all cursor-pointer"
+                className="inline-flex items-center gap-1.5 px-3.5 py-3 rounded-xl bg-zinc-950 hover:bg-zinc-900 text-zinc-400 hover:text-zinc-200 border border-zinc-800/80 hover:border-zinc-700 font-mono text-xs transition-all cursor-pointer"
                 id="hero-btn-github-guide"
                 title="How to host on GitHub Pages"
               >
-                <Github className="w-4 h-4 text-zinc-300" />
-                <span>GitHub Host Guide</span>
+                <Github className="w-3.5 h-3.5 text-zinc-400" />
+                <span>Host Guide</span>
               </button>
             </div>
 
