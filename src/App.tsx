@@ -27,7 +27,7 @@ import { autoSyncEngine } from './services/autoSyncEngine';
 import { GitHubLiveData } from './services/githubService';
 import { Terminal, Radio } from 'lucide-react';
 
-const STORAGE_KEY = 'etworkapp_portfolio_data_v15';
+const STORAGE_KEY = 'etworkapp_portfolio_data_v16';
 
 export default function App() {
   const [data, setData] = useState<PortfolioContent>(() => {
@@ -47,7 +47,8 @@ export default function App() {
         'etworkapp_portfolio_data_v11',
         'etworkapp_portfolio_data_v12',
         'etworkapp_portfolio_data_v13',
-        'etworkapp_portfolio_data_v14'
+        'etworkapp_portfolio_data_v14',
+        'etworkapp_portfolio_data_v15'
       ].forEach(k => {
         try { localStorage.removeItem(k); } catch (_) {}
       });
@@ -60,6 +61,7 @@ export default function App() {
           name: 'Shubham',
           role: initialPortfolioData.profile.role,
           email: 'shubhampw2026@gmail.com',
+          phone: undefined,
           linkedinUrl: 'https://www.linkedin.com/in/shubham-w-02b8b2436/',
           githubUsername: 'etworkapp',
           githubUrl: 'https://github.com/etworkapp'

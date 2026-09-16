@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Printer, Download, Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
+import { X, Printer, Download, Mail, MapPin, Github, Linkedin } from 'lucide-react';
 import { PortfolioContent } from '../types';
 
 interface ResumeModalProps {
@@ -99,12 +99,6 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({
                 <Mail className="w-3.5 h-3.5 text-zinc-700" />
                 <span>{profile.email}</span>
               </div>
-              {profile.phone && (
-                <div className="flex items-center sm:justify-end gap-1.5">
-                  <Phone className="w-3.5 h-3.5 text-zinc-700" />
-                  <span>{profile.phone}</span>
-                </div>
-              )}
               <div className="flex items-center sm:justify-end gap-1.5">
                 <MapPin className="w-3.5 h-3.5 text-zinc-700" />
                 <span>{profile.location}</span>

@@ -8,7 +8,6 @@ export const initialPortfolioData: PortfolioContent = {
     bio: "Passionate software engineer focused on building clean, high-performance web products. Experienced in developing full-stack architectures with React, Node.js, TypeScript, and modern styling libraries. Committed to writing maintainable code, optimizing frontend performance, and crafting intuitive user interfaces.",
     location: "India",
     email: "shubhampw2026@gmail.com",
-    phone: "+91 98765 43210",
     githubUsername: "etworkapp",
     githubUrl: "https://github.com/etworkapp",
     linkedinUrl: "https://www.linkedin.com/in/shubham-w-02b8b2436/",
